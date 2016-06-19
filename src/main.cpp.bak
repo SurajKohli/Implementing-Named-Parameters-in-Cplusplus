@@ -1,0 +1,105 @@
+#include <iostream>
+#include "functiondefinitions.hpp"
+#include "matchfunctions.hpp"
+
+std::multimap<std::string, std::unordered_map<std::string,std::string>>* getFunctionCalls( std::string src_file );
+void printNamedParams( auto, auto );
+int main( int argc, char *argv[] )
+{
+    if( argc < 3 )
+    {
+        std::cerr << "Usage : cpp-params [SOURCE FILE] [HEADER FILE] ..." << std::endl;
+        exit(-1);
+    }
+    int i = 0;
+    while( i < argc - 1 )
+    {
+        ++i;
+        std::string src_file = argv[i];
+        std::string header_file = argv[i];
+        FunctDefn *fd = FunctDefn::getInstance( header_file );
+        //FunctDefn fd( header_file ); //call has to change 
+        auto funcCalls = getFunctionCalls( src_file );
+        printNamedParams( funcCalls, fd );
+        delete funcCalls;
+    }
+    FunctDefn::deleteInstance();
+    return 0;
+}
+
+std::multimap<std::string, std::unordered_map<std::string,std::string>>* getFunctionCalls( std::string src_file )
+{
+    auto *functionCalls = new std::multimap<std::string, std::unordered_map<std::string,std::string>>(); 
+    std::string line;
+    std::ifstream f( src_file  );
+    if( f.is_open() )
+    {
+        while( std::getline( f, line ) )
+        {
+            auto func = matchFunctionCall( line );
+            if( ( func.first.compare("") != 0 ) && ( func.second.compare("") != 0 ) )
+            {
+                auto actualParams = insertActualParameters( func.second );
+                functionCalls->insert( std::pair<std::string, std::unordered_map<std::string, std::string>>( func.first, actualParams ) );
+            }
+        }
+    }
+    else
+    {
+        std::cerr << "Cannot open file" << std::endl;
+    }
+    f.close();
+    return functionCalls;
+}
+
+void printNamedParams( auto funcCalls, auto fd )
+{
+    for( const auto &it : *funcCalls )
+    {
+        //auto p = fd->functionDefns->find( it.first );
+        auto iter_pair = fd->functionDefns->equal_range(it.first );
+        if( iter_pair.first == iter_pair.second )
+        {
+            std::cout << "Function Definition : " << it.first << " not found\n";
+            continue;
+        }
+        for( auto iter = iter_pair.first; iter != iter_pair.second; ++iter )
+        {
+            if( ( iter->second->m_numNormalArgs == it.second.size() ) 
+                  || ( ( it.second.size() > iter->second->m_numNormalArgs ) 
+                  && ( it.second.size() <= iter->second->m_numNormalArgs + iter->second->m_numDefArgs ) ) )
+            {
+                std::cout << "Function : " << iter->first;
+                std::cout << ( iter->second->m_overloaded ? " (Overloaded)\n" : "\n" );
+                while( !iter->second->formal_params->empty() )
+                {
+                    std::cout << "Inside while\n";
+                    auto param_arg_pair = iter->second->formal_params->front();
+                    auto param_name = param_arg_pair.first;
+                    auto def_arg = param_arg_pair.second;
+                    auto q = it.second.find( param_name );
+                    if( q == it.second.end() )
+                    {
+                        //Check for default args
+                        if( ! def_arg.empty() )
+                        {
+                            std::cout << param_name << " : " << def_arg << " (Default arg)" << std::endl;
+                        }
+                        else
+                        {
+                            std::cout << "Param : " << param_name  << " in function " << it.first << " not found\n";
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        std::cout << param_name << " : " << q->second << std::endl;
+                    }
+                    iter->second->formal_params->pop();
+                }
+            }
+        }
+        std::cout << "-----------" << std::endl;
+    }
+
+}

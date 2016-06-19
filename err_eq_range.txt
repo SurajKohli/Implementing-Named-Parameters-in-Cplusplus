@@ -1,0 +1,1437 @@
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_less_val::operator()(_Iterator, _Value&) const [with _Iterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, FunctAttr*> >; _Value = const std::basic_string<char>]’:
+/usr/include/c++/4.9.2/bits/stl_algo.h:2145:37:   required from ‘std::pair<_FIter, _FIter> std::__equal_range(_ForwardIterator, _ForwardIterator, const _Tp&, _CompareItTp, _CompareTpIt) [with _ForwardIterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, FunctAttr*> >; _Tp = std::basic_string<char>; _CompareItTp = __gnu_cxx::__ops::_Iter_less_val; _CompareTpIt = __gnu_cxx::__ops::_Val_less_iter]’
+/usr/include/c++/4.9.2/bits/stl_algo.h:2200:40:   required from ‘std::pair<_FIter, _FIter> std::equal_range(_FIter, _FIter, const _Tp&) [with _FIter = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, FunctAttr*> >; _Tp = std::basic_string<char>]’
+src/main.cpp:61:101:   required from ‘void printNamedParams(auto:1, auto:2) [with auto:1 = std::multimap<std::basic_string<char>, std::unordered_map<std::basic_string<char>, std::basic_string<char> > >*; auto:2 = FunctDefn*]’
+src/main.cpp:24:41:   required from here
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: error: no match for ‘operator<’ (operand types are ‘std::pair<const std::basic_string<char>, FunctAttr*>’ and ‘const std::basic_string<char>’)
+       { return *__it < __val; }
+                      ^
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note: candidates are:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:837:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:837:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:844:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:844:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return *__it < __val; }
+                      ^
+In file included from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std/slist_traits.hpp:16:0,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std_containers_traits.hpp:23,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string.hpp:18,
+                 from include/insertparams.hpp:8,
+                 from include/functiondefinitions.hpp:7,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/ext/slist:812:5: note: template<class _Tp, class _Alloc> bool __gnu_cxx::operator<(const __gnu_cxx::slist<_Tp, _Alloc>&, const __gnu_cxx::slist<_Tp, _Alloc>&)
+     operator<(const slist<_Tp, _Alloc>& _SL1, const slist<_Tp, _Alloc>& _SL2)
+     ^
+/usr/include/c++/4.9.2/ext/slist:812:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const __gnu_cxx::slist<_Tp, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/list:63:0,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std/list_traits.hpp:15,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std_containers_traits.hpp:20,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string.hpp:18,
+                 from include/insertparams.hpp:8,
+                 from include/functiondefinitions.hpp:7,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_list.h:1758:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::list<_Tp, _Alloc>&, const std::list<_Tp, _Alloc>&)
+     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_list.h:1758:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::list<_Tp, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1450:5: note: template<class _Bi_iter> bool std::operator<(const std::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type&)
+     operator<(const sub_match<_Bi_iter>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1450:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1370:5: note: template<class _Bi_iter> bool std::operator<(const typename std::iterator_traits<_Iter>::value_type&, const std::sub_match<_BiIter>&)
+     operator<(typename iterator_traits<_Bi_iter>::value_type const& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1370:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1293:5: note: template<class _Bi_iter> bool std::operator<(const std::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type*)
+     operator<(const sub_match<_Bi_iter>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1293:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1219:5: note: template<class _Bi_iter> bool std::operator<(const typename std::iterator_traits<_Iter>::value_type*, const std::sub_match<_BiIter>&)
+     operator<(typename iterator_traits<_Bi_iter>::value_type const* __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1219:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1145:5: note: template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::operator<(const std::sub_match<_BiIter>&, std::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&)
+     operator<(const sub_match<_Bi_iter>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1145:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1071:5: note: template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::operator<(std::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&, const std::sub_match<_BiIter>&)
+     operator<(const __sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1071:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘std::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:995:5: note: template<class _BiIter> bool std::operator<(const std::sub_match<_BiIter>&, const std::sub_match<_BiIter>&)
+     operator<(const sub_match<_BiIter>& __lhs, const sub_match<_BiIter>& __rhs)
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:995:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/stack:61:0,
+                 from /usr/include/c++/4.9.2/regex:48,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_stack.h:264:5: note: template<class _Tp, class _Seq> bool std::operator<(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)
+     operator<(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_stack.h:264:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::stack<_Tp, _Seq>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:82:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr.h:379:5: note: template<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr.h:379:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   cannot convert ‘__it.std::_Rb_tree_iterator<_Tp>::operator*<std::pair<const std::basic_string<char>, FunctAttr*> >()’ (type ‘std::pair<const std::basic_string<char>, FunctAttr*>’) to type ‘std::nullptr_t’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:82:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr.h:374:5: note: template<class _Tp> bool std::operator<(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr.h:374:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::shared_ptr<_Tp1>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:82:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr.h:365:5: note: template<class _Tp1, class _Tp2> bool std::operator<(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator<(const shared_ptr<_Tp1>& __a,
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr.h:365:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::shared_ptr<_Tp1>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.9.2/memory:82,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1228:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1228:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   cannot convert ‘__it.std::_Rb_tree_iterator<_Tp>::operator*<std::pair<const std::basic_string<char>, FunctAttr*> >()’ (type ‘std::pair<const std::basic_string<char>, FunctAttr*>’) to type ‘std::nullptr_t’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.9.2/memory:82,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1223:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1223:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.9.2/memory:82,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1214:5: note: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator<(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1214:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:81:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/unique_ptr.h:675:5: note: template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+     ^
+/usr/include/c++/4.9.2/bits/unique_ptr.h:675:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   cannot convert ‘__it.std::_Rb_tree_iterator<_Tp>::operator*<std::pair<const std::basic_string<char>, FunctAttr*> >()’ (type ‘std::pair<const std::basic_string<char>, FunctAttr*>’) to type ‘std::nullptr_t’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:81:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/unique_ptr.h:669:5: note: template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+     ^
+/usr/include/c++/4.9.2/bits/unique_ptr.h:669:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:81:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/unique_ptr.h:658:5: note: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator<(const unique_ptr<_Tp, _Dp>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/unique_ptr.h:658:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/queue:64:0,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_queue.h:289:5: note: template<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)
+     operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_queue.h:289:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::queue<_Tp, _Seq>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/vector:64:0,
+                 from /usr/include/c++/4.9.2/queue:61,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_vector.h:1528:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_vector.h:1528:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/deque:64:0,
+                 from /usr/include/c++/4.9.2/queue:60,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_deque.h:2047:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)
+     operator<(const deque<_Tp, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_deque.h:2047:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/deque:64:0,
+                 from /usr/include/c++/4.9.2/queue:60,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_deque.h:285:5: note: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_deque.h:285:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/deque:64:0,
+                 from /usr/include/c++/4.9.2/queue:60,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_deque.h:277:5: note: template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_deque.h:277:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/map:62:0,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_multimap.h:920:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_multimap.h:920:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/map:61:0,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_map.h:1017:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_map.h:1017:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_map.h:63:0,
+                 from /usr/include/c++/4.9.2/map:61,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/tuple:859:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Args1 ...>&, const std::tuple<_Args2 ...>&)
+     operator<(const tuple<_TElements...>& __t,
+     ^
+/usr/include/c++/4.9.2/tuple:859:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::tuple<_Args1 ...>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/tuple:39:0,
+                 from /usr/include/c++/4.9.2/bits/stl_map.h:63,
+                 from /usr/include/c++/4.9.2/map:61,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/array:242:5: note: template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+     ^
+/usr/include/c++/4.9.2/array:242:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::array<_Tp, _Nm>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/map:60:0,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_tree.h:980:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_tree.h:980:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/string:52:0,
+                 from /usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9.2/ios:42,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/basic_string.h:2612:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/basic_string.h:2612:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   mismatched types ‘const _CharT*’ and ‘std::pair<const std::basic_string<char>, FunctAttr*>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/string:52:0,
+                 from /usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9.2/ios:42,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/basic_string.h:2600:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/basic_string.h:2600:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/string:52:0,
+                 from /usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9.2/ios:42,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/basic_string.h:2588:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/basic_string.h:2588:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1078:5: note: template<class _Iterator> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1078:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::move_iterator<_Iterator>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1072:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1072:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::move_iterator<_Iterator>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:348:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:348:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:298:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:298:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       { return *__it < __val; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:54:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::pair<_T1, _T2>’
+       { return *__it < __val; }
+                      ^
+/usr/include/c++/4.9.2/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_less_iter::operator()(_Value&, _Iterator) const [with _Value = const std::basic_string<char>; _Iterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, FunctAttr*> >]’:
+/usr/include/c++/4.9.2/bits/stl_algo.h:2151:42:   required from ‘std::pair<_FIter, _FIter> std::__equal_range(_ForwardIterator, _ForwardIterator, const _Tp&, _CompareItTp, _CompareTpIt) [with _ForwardIterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, FunctAttr*> >; _Tp = std::basic_string<char>; _CompareItTp = __gnu_cxx::__ops::_Iter_less_val; _CompareTpIt = __gnu_cxx::__ops::_Val_less_iter]’
+/usr/include/c++/4.9.2/bits/stl_algo.h:2200:40:   required from ‘std::pair<_FIter, _FIter> std::equal_range(_FIter, _FIter, const _Tp&) [with _FIter = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, FunctAttr*> >; _Tp = std::basic_string<char>]’
+src/main.cpp:61:101:   required from ‘void printNamedParams(auto:1, auto:2) [with auto:1 = std::multimap<std::basic_string<char>, std::unordered_map<std::basic_string<char>, std::basic_string<char> > >*; auto:2 = FunctDefn*]’
+src/main.cpp:24:41:   required from here
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: error: no match for ‘operator<’ (operand types are ‘const std::basic_string<char>’ and ‘std::pair<const std::basic_string<char>, FunctAttr*>’)
+       { return __val < *__it; }
+                      ^
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note: candidates are:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:837:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:837:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:844:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator<(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:844:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+       { return __val < *__it; }
+                      ^
+In file included from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std/slist_traits.hpp:16:0,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std_containers_traits.hpp:23,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string.hpp:18,
+                 from include/insertparams.hpp:8,
+                 from include/functiondefinitions.hpp:7,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/ext/slist:812:5: note: template<class _Tp, class _Alloc> bool __gnu_cxx::operator<(const __gnu_cxx::slist<_Tp, _Alloc>&, const __gnu_cxx::slist<_Tp, _Alloc>&)
+     operator<(const slist<_Tp, _Alloc>& _SL1, const slist<_Tp, _Alloc>& _SL2)
+     ^
+/usr/include/c++/4.9.2/ext/slist:812:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const __gnu_cxx::slist<_Tp, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/list:63:0,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std/list_traits.hpp:15,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string/std_containers_traits.hpp:20,
+                 from /home/utkarsh/Devel/Boost/boost_1_57_0/boost/algorithm/string.hpp:18,
+                 from include/insertparams.hpp:8,
+                 from include/functiondefinitions.hpp:7,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_list.h:1758:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::list<_Tp, _Alloc>&, const std::list<_Tp, _Alloc>&)
+     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_list.h:1758:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::list<_Tp, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1450:5: note: template<class _Bi_iter> bool std::operator<(const std::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type&)
+     operator<(const sub_match<_Bi_iter>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1450:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1370:5: note: template<class _Bi_iter> bool std::operator<(const typename std::iterator_traits<_Iter>::value_type&, const std::sub_match<_BiIter>&)
+     operator<(typename iterator_traits<_Bi_iter>::value_type const& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1370:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1293:5: note: template<class _Bi_iter> bool std::operator<(const std::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type*)
+     operator<(const sub_match<_Bi_iter>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1293:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1219:5: note: template<class _Bi_iter> bool std::operator<(const typename std::iterator_traits<_Iter>::value_type*, const std::sub_match<_BiIter>&)
+     operator<(typename iterator_traits<_Bi_iter>::value_type const* __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1219:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1145:5: note: template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::operator<(const std::sub_match<_BiIter>&, std::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&)
+     operator<(const sub_match<_Bi_iter>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1145:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:1071:5: note: template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::operator<(std::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&, const std::sub_match<_BiIter>&)
+     operator<(const __sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:1071:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/regex:58:0,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/regex.h:995:5: note: template<class _BiIter> bool std::operator<(const std::sub_match<_BiIter>&, const std::sub_match<_BiIter>&)
+     operator<(const sub_match<_BiIter>& __lhs, const sub_match<_BiIter>& __rhs)
+     ^
+/usr/include/c++/4.9.2/bits/regex.h:995:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::sub_match<_BiIter>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/stack:61:0,
+                 from /usr/include/c++/4.9.2/regex:48,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_stack.h:264:5: note: template<class _Tp, class _Seq> bool std::operator<(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)
+     operator<(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_stack.h:264:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::stack<_Tp, _Seq>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:82:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr.h:379:5: note: template<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr.h:379:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   cannot convert ‘__val’ (type ‘const std::basic_string<char>’) to type ‘std::nullptr_t’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:82:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr.h:374:5: note: template<class _Tp> bool std::operator<(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr.h:374:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::shared_ptr<_Tp1>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:82:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr.h:365:5: note: template<class _Tp1, class _Tp2> bool std::operator<(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator<(const shared_ptr<_Tp1>& __a,
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr.h:365:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::shared_ptr<_Tp1>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.9.2/memory:82,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1228:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1228:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   cannot convert ‘__val’ (type ‘const std::basic_string<char>’) to type ‘std::nullptr_t’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.9.2/memory:82,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1223:5: note: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1223:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/4.9.2/memory:82,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1214:5: note: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator<(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^
+/usr/include/c++/4.9.2/bits/shared_ptr_base.h:1214:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::__shared_ptr<_Tp1, _Lp>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:81:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/unique_ptr.h:675:5: note: template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+     ^
+/usr/include/c++/4.9.2/bits/unique_ptr.h:675:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   cannot convert ‘__val’ (type ‘const std::basic_string<char>’) to type ‘std::nullptr_t’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:81:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/unique_ptr.h:669:5: note: template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+     ^
+/usr/include/c++/4.9.2/bits/unique_ptr.h:669:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/memory:81:0,
+                 from /usr/include/c++/4.9.2/regex:46,
+                 from include/matchfunctions.hpp:3,
+                 from include/functiondefinitions.hpp:6,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/unique_ptr.h:658:5: note: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator<(const unique_ptr<_Tp, _Dp>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/unique_ptr.h:658:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/queue:64:0,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_queue.h:289:5: note: template<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)
+     operator<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_queue.h:289:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::queue<_Tp, _Seq>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/vector:64:0,
+                 from /usr/include/c++/4.9.2/queue:61,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_vector.h:1528:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_vector.h:1528:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/deque:64:0,
+                 from /usr/include/c++/4.9.2/queue:60,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_deque.h:2047:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)
+     operator<(const deque<_Tp, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_deque.h:2047:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::deque<_Tp, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/deque:64:0,
+                 from /usr/include/c++/4.9.2/queue:60,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_deque.h:285:5: note: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_deque.h:285:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/deque:64:0,
+                 from /usr/include/c++/4.9.2/queue:60,
+                 from include/functionattributes.hpp:5,
+                 from include/functiondefinitions.hpp:5,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_deque.h:277:5: note: template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_deque.h:277:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/map:62:0,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_multimap.h:920:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_multimap.h:920:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/map:61:0,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_map.h:1017:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_map.h:1017:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_map.h:63:0,
+                 from /usr/include/c++/4.9.2/map:61,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/tuple:859:5: note: template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Args1 ...>&, const std::tuple<_Args2 ...>&)
+     operator<(const tuple<_TElements...>& __t,
+     ^
+/usr/include/c++/4.9.2/tuple:859:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::tuple<_Args1 ...>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/tuple:39:0,
+                 from /usr/include/c++/4.9.2/bits/stl_map.h:63,
+                 from /usr/include/c++/4.9.2/map:61,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/array:242:5: note: template<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+     ^
+/usr/include/c++/4.9.2/array:242:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::array<_Tp, _Nm>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/map:60:0,
+                 from include/functiondefinitions.hpp:4,
+                 from src/main.cpp:2:
+/usr/include/c++/4.9.2/bits/stl_tree.h:980:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_tree.h:980:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/string:52:0,
+                 from /usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9.2/ios:42,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/basic_string.h:2612:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/basic_string.h:2612:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   mismatched types ‘const _CharT*’ and ‘std::basic_string<char>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/string:52:0,
+                 from /usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9.2/ios:42,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/basic_string.h:2600:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/basic_string.h:2600:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   mismatched types ‘const _CharT*’ and ‘std::pair<const std::basic_string<char>, FunctAttr*>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/string:52:0,
+                 from /usr/include/c++/4.9.2/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9.2/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9.2/ios:42,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/basic_string.h:2588:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.9.2/bits/basic_string.h:2588:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘std::pair<const std::basic_string<char>, FunctAttr*>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1078:5: note: template<class _Iterator> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1078:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::move_iterator<_Iterator>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1072:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:1072:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::move_iterator<_Iterator>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:348:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:348:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_iterator.h:298:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.9.2/bits/stl_iterator.h:298:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       { return __val < *__it; }
+                      ^
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.9.2/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.9.2/bits/stl_algobase.h:71:0,
+                 from /usr/include/c++/4.9.2/bits/char_traits.h:39,
+                 from /usr/include/c++/4.9.2/ios:40,
+                 from /usr/include/c++/4.9.2/ostream:38,
+                 from /usr/include/c++/4.9.2/iostream:39,
+                 from src/main.cpp:1:
+/usr/include/c++/4.9.2/bits/predefined_ops.h:70:22: note:   ‘const std::basic_string<char>’ is not derived from ‘const std::pair<_T1, _T2>’
+       { return __val < *__it; }
+                      ^
+make: *** [obj/main.o] Error 1
